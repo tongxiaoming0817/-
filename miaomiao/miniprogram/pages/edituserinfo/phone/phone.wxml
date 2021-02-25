@@ -1,0 +1,4 @@
+<!--miniprogram/pages/edituserinfo/phone/phone.wxml-->
+<!-- <text>miniprogram/pages/edituserinfo/phone/phone.wxml</text> -->
+<input bindinput="handtext" value='{{phoneNumber}}' type="number" placeholder="请设置手机号"></input>
+<button bindtap="handbtn" >设置手机号</button>

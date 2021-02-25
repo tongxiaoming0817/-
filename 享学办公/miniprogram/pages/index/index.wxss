@@ -1,0 +1,109 @@
+.slider{
+  width:600rpx;
+  margin: 40rpx auto;
+}
+.tark_text{
+  text-align: center;
+}
+
+.tark_text .trak_title{
+  font-size: 35rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.tark_text .trak_desc{
+    font-size:30rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    color:#999;
+}
+.icon{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-top: 50rpx;
+}
+.icon .icon_item {
+  width: 33.33%;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.icon .icon_item.active{
+  color: #f46d4d;
+}
+.icon .icon_item image{
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.icon .icon_item .icon_text{
+  font-size: 30rpx;
+}
+.icon .icon_item .icon_text.active{
+  color: #f46d4d;
+}
+
+.startIcon{
+  margin: 100rpx auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.startIcon .start{
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 20rpx;
+  width: 300rpx;
+  border: 1px solid #f46d4d;
+  color: #f46d4d;
+}
+
+.clock{
+  background-color: #f46d4d;
+}
+
+.progress{
+  width:400rpx;
+  height: 400rpx;
+  /* background-color: orange; */
+  margin:140rpx auto;
+  position: relative;
+}
+
+.progress .progress_bg,.progress .progress_active{
+  position: absolute;
+  left:0;
+  top:0;
+  width:400rpx ;
+  height: 400rpx;
+}
+.progress .progress_text{
+  width: 160rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  color:#fff;
+  position: absolute;
+  top: 160rpx;
+  left: 120rpx;
+  text-align: center;
+}
+.btns{
+  /* margin:  auto; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+.btns .btnBack,
+.btns .btnPause,
+.btns .btnOin,
+.btns .btnUp{
+  width:300rpx ;
+  border:1rpx solid #fff;
+  line-height: 60rpx;
+  text-align: center;
+  margin:20rpx auto;
+  border-radius: 30rpx;
+  color: #fff;
+}

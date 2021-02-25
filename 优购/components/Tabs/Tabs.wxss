@@ -1,0 +1,6 @@
+/* components/Tabs/Tabs.wxss */
+.tabs{}
+.tabs .tabs_title{display: flex; padding: 15rpx 0;}
+.tabs .tabs_title .title_item{justify-content: center; align-items: center; flex: 1; text-align: center;}
+.tabs .tabs_title .title_item.active{color:var(--themeColor); border-bottom:5rpx solid #f9544e;}
+.tabs .tabs_content{}

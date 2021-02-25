@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "call-phone":"../../components/callPhone/callPhone",
+    "copy-text":"../../components/copyText/copyText"
+  }
+}

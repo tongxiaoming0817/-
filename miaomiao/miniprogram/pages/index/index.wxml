@@ -1,0 +1,35 @@
+ <!-- <wxs src='../../utils/wordsplit.wxs' module='m1'>
+ <wxs src='../../utils/linksplit.wxs' module='m2'> -->
+
+<view class='index'>
+	<!-- 轮播图 -->
+	<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{true}}" class='index-swiper'>
+		<block wx:for="{{background}}" wx:key="*this">
+			<swiper-item>
+				<!-- <im class="swiper-item {{item}}">{{item}}</view> -->
+				<image src="{{item}}" class="swiper-item {{item}}"></image>
+			</swiper-item>
+		</block>
+	</swiper>
+
+	<!-- 推荐最新 -->
+	<view class='index-tab'>
+		<view class="{{current == 'links' ? 'active' : ''}}" data-current='links' bindtap="handlecurrent">推荐</view>
+		<view class="{{current == 'time' ? 'active' : ''}}" data-current='time' bindtap="handlecurrent"> 最新</view>
+	</view>
+
+	<!-- 推荐最新内容 -->
+
+	<view class="index-list">
+		<view class='index-item' wx:for="{{listdata}}">
+			<image src="{{item.userPhoto}}" data-id='{{item._id}}' bindtap="handetail"></image>
+			<view class='index-list-text'>
+				<text>{{item.nickName}}</text>
+				<text bindtap="handlinks" data-id='{{item._id}}'>
+					<text class='iconfont icondianzan' ></text>
+					<text >{{item.links}}</text>
+				</text>
+			</view>
+		</view>
+	</view>
+</view>

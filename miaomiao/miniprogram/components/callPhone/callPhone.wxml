@@ -1,0 +1,2 @@
+<!--components/callPhone/callPhone.wxml-->
+<text class='iconfont icondadianhua' bindtap="handlecallphone"></text>

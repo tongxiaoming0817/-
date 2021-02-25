@@ -1,0 +1,4 @@
+<!-- <input bindinput="handtext" value='{{nickName}}'></input> -->
+<image src='{{userPhoto}}' bindtap="updateloadimg"></image>
+<button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">使用微信头像</button>
+<button bindtap="handbtn">设置自定义头像</button>

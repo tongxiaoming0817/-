@@ -1,0 +1,20 @@
+/* pages/detail/detail.wxss */
+.detail-item{
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  border-bottom: 1px #b4b5b6 dashed;
+  padding: 20rpx 0 ;
+}
+.detail-item text{
+}
+
+.detail-item image{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+
+button{
+  margin-top: 20rpx;
+}

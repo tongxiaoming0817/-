@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/log/log"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "white",
+    "navigationBarBackgroundColor": "#f46d4d",
+    "navigationBarTitleText": "番茄时钟",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  
+  "tabBar": {
+    "selectedColor":"#f46d4d",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "定时",
+      "iconPath":"./images/jishi2.png",
+      "selectedIconPath":"./images/jishi.png"
+    },
+    {
+      "pagePath": "pages/log/log",
+      "text": "统计",
+      "iconPath":"./images/tongji2.png",
+      "selectedIconPath":"./images/tongji.png"
+    }
+  ]
+  }
+}

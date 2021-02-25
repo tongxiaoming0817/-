@@ -1,0 +1,119 @@
+/* pages/goods_detail/index.wxss */
+page{
+  padding-bottom: 90rpx;
+}
+.detail {}
+
+.detail swiper {
+  height: 65vw;
+  text-align: center;
+}
+
+.detail swiper swiper-item {}
+
+.detail swiper swiper-item image {
+  width: 60%;
+}
+
+.goods_price {
+  padding: 15rpx;
+  font-weight: 600;
+  color: #f9544e;
+}
+
+.goods_name_row {
+  display: flex;
+  border-bottom: 5rpx solid #dedede;
+  border-top: 1px solid #dedede;
+  padding: 10rpx 0;
+
+}
+
+.goods_name_row .goods_name {
+  flex: 5;
+  padding: 0 10rpx;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+}
+
+.goods_name_row .goods_collect {
+  flex: 1;
+  text-align: center;
+  border-left: 1px solid #000;
+}
+
+.goods_name_row .goods_collect text {}
+
+.goods_name_row .goods_collect .collect {}
+
+.goods_info {}
+
+.goods_info .goods_info_title {
+  color: #f9544e;
+  font-weight: 600;
+  font-size: 32rpx;
+  padding: 20rpx;
+}
+
+.goods_info .goods_info_content {}
+
+.btn_tool {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color: #fff;
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+.btn_tool .tool_item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 600;
+  color: #000;
+  position: relative;
+}
+.btn_tool .tool_item button{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+/* .btn_tool .tool_item:nth-last-child(-n+0){
+  border-right: 1px solid #000;
+}
+.btn_tool .tool_item:nth-last-child(-n+2){
+  flex: 2;
+} */
+.btn_tool .btn_cart{
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffa300;
+  color: #fff;
+}
+.btn_tool navigator{
+  flex: 2;
+  display: flex;
+}
+.btn_tool .btn_buy{
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9544d;
+  color: #fff;
+
+}

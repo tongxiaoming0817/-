@@ -1,0 +1,40 @@
+<view hidden="{{clockShow}}">
+	<!-- 滑动条 -->
+	<view class='slider'>
+		<slider bindchange="slider4change" min="1" max="60" activeColor='#f46d4d' backgroundColor='#000' show-value bindchange='sliderChange' value="{{slidertime}}" />
+	</view>
+	<!-- 说明 -->
+	<view class='tark_text'>
+		<view class="trak_title">请选择一个任务</view>
+		<view class="trak_desc">在接下来的{{slidertime}}分钟,你将专注这个事情</view>
+	</view>
+	<!-- icon -->
+	<view class='icon'>
+		<view wx:for="{{iconList}}" class='icon_item' bindtap='bindChang' data-index='{{index}}'>
+			<image src="../../images/{{item.imgUrl}}.png"></image>
+			<view class='icon_text {{index===activeIndex ? "active" :""}}'>{{item.text}}</view>
+		</view>
+	</view>
+	<!-- 按钮 -->
+	<view class="startIcon">
+		<view class="start" bindtap="btnstart">开始专注</view>
+	</view>
+</view>
+
+<!--时钟页  -->
+<view hidden="{{!clockShow}}" class='clock' style="height:{{clockHeight}}rpx">
+	<view class='progress'>
+		<canvas canvas-id="progress_bg" class="progress_bg"></canvas>
+		<canvas canvas-id="progress_active" class="progress_active"></canvas>
+		<view class='progress_text'>{{timeStr}}</view>
+	</view>
+	<view class="btns">
+		<view class='btnBack' bindtap="btnBack" wx:if="{{btnBackShow}}">返回</view>
+		<view class='btnPause' bindtap="btnPause" wx:if="{{btnPauseShow}}">暂停</view>
+		<view class='btnOinUp' wx:if="{{btnOinUpShow}}">
+			<view class="btnOin" bindtap="btnOin">继续</view>
+			<view class="btnUp" bindtap="btnUp">放弃</view>
+		</view>
+	</view>
+</view>
+

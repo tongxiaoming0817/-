@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/near/near",
+    "pages/user/user",
+    "pages/message/message",
+    "pages/edituserinfo/edituserinfo",
+    "pages/friendlist/friendlist",
+    "pages/edituserinfo/head/head",
+    "pages/edituserinfo/name/name",
+    "pages/edituserinfo/signature/signature",
+    "pages/edituserinfo/loaction/loaction",
+    "pages/edituserinfo/phone/phone",
+    "pages/edituserinfo/weixin/weixin",
+    "components/callPhone/callPhone",
+    "components/copyText/copyText"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#8a7ff2",
+    "navigationBarTitleText": "喵喵的喵星人",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "list": [
+      {
+        "iconPath": "images/tabbar/首页.png",
+        "selectedIconPath": "images/tabbar/首页_active.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "images/tabbar/附近.png",
+        "selectedIconPath": "images/tabbar/附近_active.png",
+        "pagePath": "pages/near/near",
+        "text": "附近"
+      },
+      {
+        "iconPath": "images/tabbar/我的.png",
+        "selectedIconPath": "images/tabbar/我的_active.png",
+        "pagePath": "pages/message/message",
+        "text": "消息"
+      },
+      {
+        "iconPath": "images/tabbar/消息.png",
+        "selectedIconPath": "images/tabbar/消息_active.png",
+        "pagePath": "pages/user/user",
+        "text": "我的"
+      }
+    ]
+  }
+}
